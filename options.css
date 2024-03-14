@@ -1,0 +1,80 @@
+/* options.css - Styles for the options page of the Website Comment Chrome Extension */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #357ae8;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  margin-left: 5px;
+}
+
+#backgroundImageSelector,
+#dotTypeSelector {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+#musicToggle,
+#breathingExerciseToggle {
+  margin-right: 10px;
+}
+
+.options-container {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.save-button-container {
+  text-align: right;
+}
+
+/* Add additional styles for custom elements if necessary */

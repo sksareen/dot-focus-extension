@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Comment Extension</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <div id="comment-container">
+        <h1>Website Comment</h1>
+        <textarea id="comment-input" placeholder="Add your comment..."></textarea>
+        <button id="save-comment">Save Comment</button>
+        <div id="comments-list"></div>
+    </div>
+    <div id="focus-session-container">
+        <h2>Focus Session</h2>
+        <div id="focus-instructions">
+            <p>Focus on the dot and the background. Click start to begin your focus session.</p>
+        </div>
+        <div id="focus-area">
+            <img src="images/background.jpg" alt="Focus Background" class="background-image">
+            <div class="dot"></div>
+        </div>
+        <div id="focus-controls">
+            <button id="startButton">Start</button>
+            <button id="endButton" disabled>End</button>
+            <div id="focusTimer">00:00</div>
+        </div>
+        <div id="focus-rating-container">
+            <label for="focusRating">Rate your focus (1-5):</label>
+            <input type="number" id="focusRating" min="1" max="5">
+        </div>
+        <div id="sessionSummary" class="summary"></div>
+    </div>
+    <div id="options-container">
+        <h2>Options</h2>
+        <label for="backgroundImageSelector">Background Image:</label>
+        <select id="backgroundImageSelector">
+            <!-- Options will be populated by popup.js -->
+        </select>
+        <label for="dotTypeSelector">Dot Type:</label>
+        <select id="dotTypeSelector">
+            <!-- Options will be populated by popup.js -->
+        </select>
+        <label for="musicToggle">Play Music:</label>
+        <input type="checkbox" id="musicToggle">
+        <label for="breathingExerciseToggle">Guided Breathing Exercise:</label>
+        <input type="checkbox" id="breathingExerciseToggle">
+    </div>
+</body>
+</html>

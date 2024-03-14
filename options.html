@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="options-container">
+        <h1>Website Comment Extension Options</h1>
+        <form id="preferencesForm">
+            <div class="form-group">
+                <label for="backgroundImageSelector">Background Image:</label>
+                <select id="backgroundImageSelector" name="backgroundImage">
+                    <!-- Options will be populated by options.js -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dotTypeSelector">Dot Type:</label>
+                <select id="dotTypeSelector" name="dotType">
+                    <!-- Options will be populated by options.js -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="musicToggle">Play Music:</label>
+                <input type="checkbox" id="musicToggle" name="musicOn">
+            </div>
+            <div class="form-group">
+                <label for="breathingExerciseToggle">Guided Breathing Exercise:</label>
+                <input type="checkbox" id="breathingExerciseToggle" name="breathingExercise">
+            </div>
+            <button type="button" id="saveButton">Save Preferences</button>
+        </form>
+    </div>
+    <script src="lib/jquery.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>

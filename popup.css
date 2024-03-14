@@ -1,0 +1,119 @@
+/* Popup CSS for Website Comment Chrome Extension */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+#popup-container {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#startButton,
+#endButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startButton:disabled,
+#endButton:disabled {
+  background-color: #9E9E9E;
+  cursor: default;
+}
+
+#focusTimer {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#focusRating {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.background-image {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.summary {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+
+#backgroundImageSelector,
+#dotTypeSelector {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#musicToggle,
+#breathingExerciseToggle {
+  margin-bottom: 10px;
+}
+
+.focus-session-active {
+  background-color: #FFEB3B;
+}
+
+/* Hide elements initially */
+#sessionSummary,
+#endButton {
+  display: none;
+}
+
+/* Custom styles for options */
+.options-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.options-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Styling for guided breathing exercise prompts */
+.breathing-exercise-prompt {
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #E1F5FE;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #01579B;
+}
